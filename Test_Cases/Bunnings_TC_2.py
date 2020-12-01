@@ -6,27 +6,19 @@ from selenium import webdriver
 from selenium.webdriver.chrome.webdriver import WebDriver
 from Pages.MainPage import MainPage
 from Pages.SignInPage import SignInPage
+import Constant as C
 
-log_file = "../Logs/log.txt"
-# Pass_message1 ="TC_1.a: Executed with search value : Drill || Successful"
-message = "Failure Occurred"
+
 driver = webdriver.Chrome()  # type: WebDriver
-base_url = "https://www.bunnings.com.au/"
-search_item = "drill"
-
-
-def set_up():
-    driver.get(base_url)
-    driver.maximize_window()
 
 
 def clear_recent_search():
     mp = MainPage(driver)
     mp.test_title()
-    U.log("INFO", message, log_file)
+    U.log("INFO", C.message, C.log_file)
     driver.save_screenshot("image.png")
     mp.clear_recent()
-    U.log("INFO", message, log_file)
+    U.log("INFO", C.message, C.log_file)
 
 
 def customer_log_recent_search():
@@ -39,6 +31,5 @@ def down():
     driver.quit()
 
 
-set_up()
 clear_recent_search()
-# down()
+down()
