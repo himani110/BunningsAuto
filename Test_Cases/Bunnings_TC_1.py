@@ -16,7 +16,7 @@ def test_main_page():
     driver.save_screenshot(C.ScreenShot_Title)
     # To check the result on search of value : drill , 1234 , blank value
     for i in [1, 2, 3]:
-        var = ["drill", "1234", "  ", 1]
+        var = ["drill", "cumin", "  ", 1]
         print (var[i - 1])
         mp.search_type(var[i - 1])
         time.sleep(2)
