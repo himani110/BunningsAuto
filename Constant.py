@@ -1,5 +1,5 @@
 base_url = "https://www.bunnings.com.au/"
 log_file = "../Logs/log.txt"
-title = "Bunnings1 Warehouse1"
+title = "Bunnings Warehouse"
 ScreenShot_Title = "../Logs/screenshot/BunningsWithTitle.png"
 mesaage = "Executed Successfully"
