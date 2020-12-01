@@ -30,6 +30,5 @@ def down():
     driver.quit()
 
 
-set_up()
 test_main_page()
 down()
