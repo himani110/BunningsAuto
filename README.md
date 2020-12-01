@@ -22,7 +22,7 @@ Challenge 6: Apply test automation to this feature outline the approach and too
 Challenge 6 response/outcome: Please refer to test plan - automation  (per file: " TestPlan_BunningsWareshouse || refer - sheet - "AutomationTestCases" ) which contain Testcase description  the top 3 test cases, I had opted to automate. Tools: seleniumScripting Language: pythonFramework: Page Object Model + Pytest
 
 
-Automation Framwork :
+Automation Framework :
 Pages - folder - > Consists of all the function,locators , elements defination.
 Test Cases - folder -> Contains 4 Files :
             Bunnings_Tc_1 : One can execute the file seperately - To check the functionalit of Auto_TC1
@@ -31,4 +31,21 @@ Test Cases - folder -> Contains 4 Files :
             or
             test_threecases : It will execute all three cases one by one :
              command : pytest [on terminal]
+             
+             
+** Test Case_1 : # To check search functionality - the positive and negative test case
+1. Customer open Bunning.com.au 
+    search item - drill  - This will show - 
+    Search item - Cumin - This will show No results for "cumin" 930 result fro Chain
+    search item - "  " - Pop up alert - functionality automated.
+    
+2. To automate the Clear recent serach 
+   Customer open Bunnungs.com.au
+   Search an item - "up"
+    result page appears 
+   Customer agian goes to main page 
+   and click on Serach bar -
+    then click on clear recent search.
+    
+ 3. Customer Signin and then check the search functionality.
 
